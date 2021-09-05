@@ -1,0 +1,138 @@
+@charset "UTF-8";
+html, body{height: 100%;}
+/* Form */
+.nav-tabs > button:not(.active){
+    color:white;
+}
+legend{
+    color:white !important;
+}
+#form{
+    position: absolute; 
+    left:-100%; 
+    background: linear-gradient(45deg,rgb(13, 202, 240),rgb(88, 83, 83), rgb(13, 202, 240)); 
+    z-index: 1;
+    top:0;
+}
+#formCloseButton{
+    margin-left:auto;
+}
+#formButon{
+    width: 100%;
+}
+/* /Form */
+
+/* Yan Menü */
+#menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background: linear-gradient(45deg,rgb(13, 202, 240),rgb(88, 83, 83), rgb(13, 202, 240));
+}
+#menu button:hover{
+    background:linear-gradient(45deg,rgb(212, 228, 231) 50%,rgb(13, 202, 240) 80%, rgb(212, 228, 231)50%) ;
+    /* background:linear-gradient(45deg,rgb(13, 202, 240),rgb(245, 244, 244), rgb(13, 202, 240)) ; */
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#menu button{
+    font-family: Copperplate Gothic Light;	
+    padding:10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(90deg,#eee 50%, rgb(140, 171, 218) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.actived{
+    background: linear-gradient(80deg,#265661 35%,#243c42, rgb(5, 5, 5)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+#yanMenuHosgeldin1Span{
+    cursor:default; 
+    font-weight: bold;
+}
+.yanMenuButonlari > button{
+    width:100%; 
+    border-radius: 0;
+}
+/* /Yan Menü */
+
+/* Özel Ayarlar */
+#ayarMenu{
+    text-decoration: none;
+    color:black;
+}
+#ayarMenuDiv{
+    cursor: pointer;
+}
+#ayarMenu > i{
+    font-size: 30px;
+}
+/* /Özel Ayarlar */
+
+/* Mobil Menü */
+#mobilMenu{
+    display:none;
+    background: -webkit-linear-gradient(45deg,rgb(255, 255, 255),rgb(185, 223, 231), rgb(255, 255, 255));
+    border-radius: 10%;
+}
+#mobilMenu > li:nth-child(1){
+    background: -webkit-linear-gradient(45deg,rgb(13, 202, 240),rgb(88, 83, 83), rgb(13, 202, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#mobilMenu > li:nth-child(1) > span{
+    cursor:default; 
+    font-weight: bold;
+}
+#mobilMenu > li:nth-child(1) > span > span{
+    display: block;
+}
+#mobilMenu > li:not(:nth-child(1)) > a{
+    font-family: Copperplate Gothic Light;	
+    padding:10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(90deg,rgb(13, 202, 240),rgb(88, 83, 83), rgb(13, 202, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#mobilMenu > li:not(:nth-child(1)) > a:hover{
+    background:linear-gradient(45deg,rgb(88, 83, 83),rgb(13, 202, 240), rgb(88, 83, 83));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#menuMobilTus{
+    font-size: 30px; 
+    cursor: pointer;
+    display:none;
+}
+/* /Mobil Menü */
+
+#anaEkran{
+    height: 100%;
+}
+
+/* Ana Ekran Üst Bölüm */
+#anaEkranUstBolum{
+    display: flex; 
+    justify-content: space-between; 
+    background:	linear-gradient(45deg,rgba(135, 226, 245, 0.6) 0%,rgba(13, 202, 240, 0.6) 30%, rgba(235, 237, 238, 0.6) 65%); 
+    height: 101%;
+}
+#menuTus{
+    font-size: 30px; 
+    cursor: pointer;
+}
+/* /Ana Ekran Üst Bölüm */
+
+#gosterimEkrani {
+	height: 100% !important;
+    overflow-x: hidden;
+}
